@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "92032548578",
+    "project_id": "prochat-3cbfe",
+    "storage_bucket": "prochat-3cbfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92032548578:android:64a7f88a02d0fe01b268bb",
+        "android_client_info": {
+          "package_name": "com.google.prochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92032548578-e1k2mtfah4tl1l8blq2kgn7k6r5je1j0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.prochat",
+            "certificate_hash": "9fa4492716cf7a1fad57f62f9c198469893de3d1"
+          }
+        },
+        {
+          "client_id": "92032548578-og675nnm181o8ci4ojughn1dgmc6ni82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKSRN8zJRVoOjqnoKmQ9d6iMDzS0C8xrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92032548578-og675nnm181o8ci4ojughn1dgmc6ni82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
