@@ -53,6 +53,7 @@ public class CallsFragment extends Fragment {
         binding.joinButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 JitsiMeetConferenceOptions  options = new JitsiMeetConferenceOptions.Builder()
                         .setRoom(binding.secretCode.getText().toString())
                         .build();

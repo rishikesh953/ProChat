@@ -13,29 +13,14 @@
         android:id="@+id/joinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
         android:background="@drawable/button_bg"
         android:text="@string/join"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/shareButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/secretCode"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489" />
-
-    <Button
-        android:id="@+id/shareButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/button_bg"
-        android:text="@string/share"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/joinButton"
         app:layout_constraintEnd_toEndOf="@+id/secretCode"
-        app:layout_constraintTop_toTopOf="@+id/joinButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/secretCode"
+        app:layout_constraintTop_toBottomOf="@+id/secretCode"
+        app:layout_constraintVertical_bias="0.028" />
 
     <EditText
         android:id="@+id/secretCode"
@@ -44,30 +29,29 @@
         android:background="@drawable/edit_bg"
         android:gravity="center"
         android:hint="@string/enter_your_code"
+        android:importantForAutofill="no"
+        android:inputType="text"
         android:padding="4dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396"
-        app:layout_constraintWidth_percent="0.8"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        app:layout_constraintVertical_bias="0.361"
+        app:layout_constraintWidth_percent="0.8" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
         android:padding="4dp"
-        android:text="@string/please_share_this_code_with_your_friends_to_start_the_call"
+        android:text="@string/please_enter_a_random_"
         android:textColor="@color/black"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/secretCode"
         app:layout_constraintEnd_toEndOf="@+id/secretCode"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/secretCode"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 
     <com.airbnb.lottie.LottieAnimationView
@@ -75,6 +59,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
@@ -84,10 +69,11 @@
     </com.airbnb.lottie.LottieAnimationView>
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_down"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:lottie_autoPlay="true"

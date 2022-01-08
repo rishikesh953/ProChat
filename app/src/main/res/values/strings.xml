@@ -33,4 +33,5 @@
     <string name="join">Join</string>
     <string name="please_share_this_code_with_your_friends_to_start_the_call">Please Share this code with your friends to start the call</string>
     <string name="enter_your_code">Enter your code.</string>
+    <string name="please_enter_a_random_">Please Enter a Random code to start the call</string>
 </resources>
